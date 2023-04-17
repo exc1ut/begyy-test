@@ -1,0 +1,8 @@
+export const MOBILE_ES = 'max-width: 375px'
+export const MOBILE_S = 'max-width: 414px'
+export const MOBILE_M = 'max-width: 550px'
+export const MOBILE = 'max-width: 768px'
+export const MOBILE_L = 'max-width: 820px'
+export const TABLET = 'max-width: 1024px'
+export const TABLET_L = 'max-width: 1124px'
+export const LAPTOP = 'max-width: 1280px'

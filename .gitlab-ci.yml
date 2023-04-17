@@ -1,0 +1,25 @@
+before_script:
+  - "export PROJECT_DIR=/web/elcos-fe"
+  - "export PROJECT=elcos-fe"
+  - "export SOURCE_DIR=`pwd`"
+  - "export API_PROTOCOL=https"
+  - "echo ${BUILD_DIR}"
+
+stages:
+  - staging
+
+deploy:
+  stage: staging
+  script:
+    - 'rm -rf ~/basic_ui_${CI_BUILD_REF_NAME}'
+    - 'mkdir ~/basic_ui_${CI_BUILD_REF_NAME}'
+    - 'cp -R ${SOURCE_DIR}/* ~/basic_ui_${CI_BUILD_REF_NAME}'
+    - 'cp -R ~/basic_ui_${CI_BUILD_REF_NAME}/* ${PROJECT_DIR}/'
+    - 'cd ${PROJECT_DIR}'
+    - 'yarn install'
+    - 'yarn build'
+    - "supervisorctl restart ui"
+  tags:
+    - staging
+  only:
+    - stable

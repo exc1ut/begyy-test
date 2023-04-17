@@ -1,0 +1,31 @@
+{
+  "name": "Elcos. Интернет-магазин косметики и парфюмерии в Ташкенте",
+  "short_name": "Elcos",
+  "description": "Elcos. Интернет-магазин косметики и парфюмерии в Ташкенте",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "dir": "ltr",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "img/x-icon"
+    },
+    {
+      "src": "images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "author": "Rouslan Mingazov",
+  "email": "mrousia@gmail.com"
+}
