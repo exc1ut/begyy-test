@@ -4,7 +4,6 @@ const withPlugins = require('next-compose-plugins')
 
 // Config
 const nextConfig = {
-  distDir: 'build',
   devIndicators: {
     autoPrerender: false
   },
